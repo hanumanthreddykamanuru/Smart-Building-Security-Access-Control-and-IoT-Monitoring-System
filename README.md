@@ -27,8 +27,30 @@ A 16×2 LCD is used to display the system status and messages to the user. The p
 - Keil µVision
 - Flash Magic
 
+## Build and Run
+
+1. Open the project in Keil µVision.
+2. Select the LPC2129 device.
+3. Add all required `.c` files.
+4. Add `header.h`.
+5. Build the project.
+6. Program the LPC2129.
+7. Connect the UART serial terminal.
+8. Test RFID, keypad, PIR, RTC and EEPROM functions.
+
+## Features
+
+- RFID authentication
+- Keypad password authentication
+- PIR motion detection
+- RTC-based timestamping
+- EEPROM data storage
+- LCD status display
+- UART monitoring
+- Modular Embedded C drivers
+
 ## Team Members
 
-- V25BE8K9
-- V25BE8K10
-- V25BE8G2
+- V25BE8K9	( Kamanuru Hanumanth Reddy )
+- V25BE8K10	( Kurakula Roopika )
+- V25BE8G2  ( Gaddiala Sravankumar )
