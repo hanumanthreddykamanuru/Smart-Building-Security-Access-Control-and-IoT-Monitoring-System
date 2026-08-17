@@ -10,6 +10,23 @@ A PIR sensor is used to detect motion. The DS1307 RTC is used to maintain the da
 
 A 16×2 LCD is used to display the system status and messages to the user. The project combines these modules to provide a simple security and access-control system.
 
+## Components Used
+
+- LPC2129 ARM7 Microcontroller
+- RFID Reader
+- 4×4 Matrix Keypad
+- PIR Motion Sensor
+- DS1307 RTC
+- I2C EEPROM (AT24C08)
+- 16×2 LCD
+- UART Communication
+
+## Software Used
+
+- Embedded C
+- Keil µVision
+- Flash Magic
+
 ## Team Members
 
 - V25BE8K9
