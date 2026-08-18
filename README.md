@@ -19,7 +19,6 @@ A 16×2 LCD is used to display the system status and messages to the user. The p
 - DS1307 RTC
 - I2C EEPROM (AT24C08)
 - 16×2 LCD
-- UART Communication
 
 ## Software Used
 
