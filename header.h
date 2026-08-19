@@ -24,7 +24,6 @@ extern void uart0_tx(unsigned char data);
 extern unsigned char uart0_rx(void);
 extern void uart0_tx_string(char *ptr);
 extern void uart0_rx_string(char *ptr);
-extern void uart0_tx_strin(char *ptr);
 extern int uart0_rx_integer(void);
 //i2c functions
 extern void i2c_init(void);

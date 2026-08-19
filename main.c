@@ -10,6 +10,7 @@ int main()
 	init();
 	servo_0deg();
 	IODIR0&=~(1<<15);
+
 	while(1)
 	{
 		uart0_tx_strin("Waiting for motion\r\n");
@@ -25,15 +26,17 @@ int main()
 			scan[12]='\0';
 			if(strcmp(rfid,scan)==0)
 			{
-				gettime();getdate();
+				gettime();
+				getdate();
 				f1=1;
 				lcd_cmd(0x01);
 				lcd_string("RFID Valid");
 				uart0_tx_string("RFID valid\r\n");
 				uart0_tx_string("Door open\r\n");
 				displaytime_uart();
-				servo_90deg();
-				delay_sec(5);
+				delay_sec(1);
+				servo_180deg();
+				delay_sec(4);
 				entry_log();
 			}else
 			{
@@ -42,7 +45,7 @@ int main()
 				uart0_tx_string("Enter key :");
 				for(i=0;i<4;i++)
 				{
-					password[i]=keypad_scan();
+					password[i]=keypad_read();
 					//password[i]=uart0_rx();
 					uart0_tx(password[i]);
 					delay_ms(200);

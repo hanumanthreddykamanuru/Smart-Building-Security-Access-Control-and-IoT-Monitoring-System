@@ -1,8 +1,8 @@
 #include "header.h"
 void entry_log(void)
 {
-//	gettime();
-//	getdate();
+	//	gettime();
+	//	getdate();
 	i2c_write(0xA0,0x01,hours);
 	delay_ms(10);
 	i2c_write(0xA0,0x02,minutes);
