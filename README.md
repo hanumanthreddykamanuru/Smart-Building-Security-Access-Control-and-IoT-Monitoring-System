@@ -1,4 +1,4 @@
-# Smart Building Security, Access Control System
+# Smart Building Security, Access Control and IoT Monitoring System
 
 ## Project Overview
 
